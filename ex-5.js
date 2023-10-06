@@ -4,17 +4,15 @@ function getLetterFrequency(words) {
   let ojectOutput = {};
   let count = 0 ;
 
-  for (let i in wordsLowerCase){
+  for (let i of wordsLowerCase){
     count += 1
-    if(ojectOutput.hasOwnProperty(wordsLowerCase[i]) === true){
-      count += 1
-      ojectOutput[wordsLowerCase[i]] = count;
-      count = 0
+    if(ojectOutput.hasOwnProperty(i) === true){
+      ojectOutput[i] = ojectOutput[i] +  count;
     }
-    else{
-      ojectOutput[wordsLowerCase[i]] = count;
-      count = 0
+    else{  
+      ojectOutput[i] = count;
     }
+    count = 0
   }
   return ojectOutput
 }
@@ -22,6 +20,7 @@ function getLetterFrequency(words) {
 const str = "Techupth";
 
 console.log(getLetterFrequency(str));
+
 
 /* Output:
 {

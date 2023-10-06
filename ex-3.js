@@ -19,4 +19,4 @@ function getMostExpensiveProduct(products) {
   return products[arrayNumber];
 }
 
-getMostExpensiveProduct(products); // Output: { name: "Laptop", price: 1000 }
+console.log(getMostExpensiveProduct(products)); // Output: { name: "Laptop", price: 1000 }

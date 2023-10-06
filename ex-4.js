@@ -27,7 +27,7 @@ function findMoviesByYear(movies, year) {
   return resultMovies
 }
 
-findMoviesByYear(movies, 1994);
+console.log(findMoviesByYear(movies, 1994));
 
 /* Output:
 [
